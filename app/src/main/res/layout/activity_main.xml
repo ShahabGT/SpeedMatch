@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_purple"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/short_margin"
+    android:layout_marginRight="@dimen/short_margin"
+    android:src="@drawable/logotext"
+    android:layout_marginBottom="@dimen/long_margin"
+    android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/main_numbers"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:layout_marginBottom="@dimen/short_margin"
+        android:background="@drawable/btnshape"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:src="@drawable/playnumbers"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_shapes"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="@dimen/short_margin"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:background="@drawable/btnshape"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:src="@drawable/playshapes"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_highscore"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:background="@drawable/btnshape"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:src="@drawable/highsocres"
+            />
+    </LinearLayout>
+</LinearLayout>
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/viewKonfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:visibility="gone"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/developer_text"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</android.support.design.widget.CoordinatorLayout>

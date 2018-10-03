@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/score_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:padding="@dimen/long_margin"
+        android:orientation="vertical"
+        android:background="@drawable/btnshape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/score_text"
+            android:text="@string/scoredialog_text"
+            android:textColor="@color/purple"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/long_margin"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/score_text2"
+            android:text="@string/scoredialog_text2"
+            android:textColor="@color/purple"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/long_margin"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/score_newhighscore"
+            android:text="@string/scoredialog_newhighscore"
+            android:textColor="@color/orange"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/long_margin"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/score_ok"
+            android:textColor="@color/white"
+            android:padding="@dimen/medium_margin"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="@string/scoredialog_button"
+            android:theme="@style/purpleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/viewKonfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.support.design.widget.CoordinatorLayout>

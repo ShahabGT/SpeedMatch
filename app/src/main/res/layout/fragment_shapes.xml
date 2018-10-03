@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ShapesFragment">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/shapes_game_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/shapes_linear"
+            android:padding="@dimen/short_margin"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center|left"
+                android:paddingRight="@dimen/short_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/timer"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:textColor="@color/purple"
+                    android:id="@+id/shapes_timer"
+                    android:padding="@dimen/short_margin"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"
+                    android:text="00:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center|right"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/short_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/purple"
+                    android:id="@+id/shapes_score"
+                    android:padding="@dimen/short_margin"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/score"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/shapes_shape"
+            android:background="@drawable/triangle"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/short_margin"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/shapes_controls"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="@dimen/long_margin"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/shapes_zerobtn"
+                    android:text="@string/shapes_btn1"
+                    android:textStyle="bold"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/purple"
+                    android:theme="@style/goldButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/shapes_onebtn"
+                    android:text="@string/shapes_btn2"
+                    android:textStyle="bold"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/purple"
+                    android:theme="@style/goldButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/shapes_twobtn"
+                    android:text="@string/shapes_btn3"
+                    android:textStyle="bold"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/purple"
+                    android:theme="@style/goldButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_margin="@dimen/medium_margin"
+        android:visibility="gone"
+        android:id="@+id/shapes_answer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/right"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/shapes_startanim"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:textColor="@color/dark_purple"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="aasd" />
+
+</android.support.constraint.ConstraintLayout>

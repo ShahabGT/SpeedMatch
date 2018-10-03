@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HighScoreActivity">
+    <TextView
+        android:background="@color/gold"
+        android:textColor="@color/dark_purple"
+        android:id="@+id/highscore_title"
+        android:text=""
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="@dimen/short_margin"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/highscore_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/highscore_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/gold"
+        app:itemTextColor="@color/purple"
+        app:elevation="@dimen/long_margin"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Speed Match</string>
+    <string name="developer_text">Maktabkhoone Project By Shahab Azimi</string>
+    <string name="title_activity_high_score">HighScoreActivity</string>
+    <string name="numbers_game">Numbers</string>
+    <string name="shapes_game">Shapes</string>
+    <string name="entername_text">Enter Your Name</string>
+    <string name="start_game">Let\'s Go</string>
+    <string name="startdialog_text">Please Enter Your Name To Start The Game!</string>
+    <string name="scoredialog_text">Your Time is Up %s \n </string>
+    <string name="scoredialog_text2">You Collected %s Stars </string>
+    <string name="scoredialog_newhighscore">Congratulations! You\'ve Reached a New Highscore </string>
+    <string name="scoredialog_button">OK</string>
+    <string name="startdialog_error">Please Enter Your Name!</string>
+
+    <string name="numbers_highscore">Numbers Game Highscores</string>
+    <string name="shapes_highscore">Shapes Game Highscores</string>
+
+   <string name="anim_txt3">Get Ready</string>
+   <string name="anim_txt2">Get Set</string>
+   <string name="anim_txt1">Go</string>
+
+    <string name="shapes_btn1">Zero</string>
+    <string name="shapes_btn2">One</string>
+    <string name="shapes_btn3">Two</string>
+</resources>
