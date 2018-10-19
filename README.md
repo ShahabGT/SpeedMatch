@@ -1,4 +1,4 @@
-# EasySQLite
+# SpeedMatch
 <p align="center">
   <img src="logotext.png" width="350" />
 </p>
